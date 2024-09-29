@@ -23,10 +23,12 @@ Route::controller(NewsController::class)->prefix('admin')->group(function(){
     Route::get('hoge','test');
 });
 
+use App\Http\Controllers\Admin\ProfileController;
 Route::controller(ProfileController::class)->prefix('admin')->group(function() {
     Route::get('profile/create', 'add');
-    Route::get('profile/create', 'edit');
+    Route::get('profile/edit', 'edit');
 });
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
