@@ -12,8 +12,7 @@ class NewsController extends Controller
     {
         return view('admin.news.create');
     }
-    public function test()
-    {
-        dd("test関数が動いた");
-    }
+
 }
+
+?>
