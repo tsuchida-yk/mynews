@@ -24,9 +24,18 @@
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">性別</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="gender" value="{{ old('title') }}">
-                        </div>
+                        <label class="col-md-3">
+                            <input type="checkbox" name="gender" value="man">
+                                男性
+                        </label>
+                        <label class="col-md-3">
+                            <input type="checkbox" name="gender" value="feman">
+                                女性
+                        </label>
+                        <label class="col-md-3">
+                            <input type="checkbox" name="gender" value="other">
+                                未回答
+                        </label>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">趣味</label>
